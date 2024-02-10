@@ -1,0 +1,138 @@
+main           11.86719      102           1.999999955296516D-02 
+main           57.07031      201           1.999999955296516D-02 
+main           59.04688      202           5.000000074505806D-02 
+main           75.85156      203           5.000000074505806D-02 
+main           82.11719      204           5.000000074505806D-02 
+main           97            205           5.000000074505806D-02 
+main           100.625       206           5.000000074505806D-02 
+main           107.9375      301           5.000000074505806D-02 
+Send.pos.prep: 111.7734      HUDFlags are 0000001000010000
+Send.pos.prep: 116.1719      HUDFlags are 0010001000010000
+main           127.4844      306           1.194267515923567D-02 
+Send.pos.prep: 127.7656      HUDFlags are 0010001001010000
+main           128.0313      307           1.194267515923567D-02 
+sent           134.5156      421 
+main           156.4375      308           .108695652173913 
+main           156.5469      309           .108695652173913 
+Send.pos.prep: 157.8047      HUDFlags are 0000000000010000
+Send.pos.prep: 173.2969      HUDFlags are 0000000000011000
+Send.pos.prep: 180.7656      HUDFlags are 0000000000100000
+main           182.9063      401           4.166666666666666D-02 
+Send.pos.prep: 182.9063      HUDFlags are 0010001000100000
+Altitude       0             3001          1.549479166666667D-02 
+Send.pos.prep: 189.3359      HUDFlags are 0010001001100000
+Altitude       0             3002          2.598110465116279D-02 
+Altitude       0             3003          .150390625 
+Altitude       0             3004          .146484375 
+Altitude       0             3005          .1549479166666667 
+Altitude       0             3006          .1555989583333333 
+Altitude       0             3007          .1555989583333333 
+Altitude       0             3008          .1555989583333333 
+Altitude       0             3009          .1476151315789474 
+Altitude       0             3010          .1476151315789474 
+Altitude       0             3011          .1476151315789474 
+Altitude       0             3012          .1727430555555556 
+Altitude       0             3013          .1671875 
+Altitude       0             3014          .1671875 
+Send.pos.prep: 213.3828      HUDFlags are 0010001001101000
+Altitude       0             3015          .1671875 
+Altitude       0             3016          .1590909090909091 
+Altitude       0             3017          .1590909090909091 
+Altitude       0             3018          .1590909090909091 
+Send.pos.prep: 217.4531 var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD var 1 = 1
+RCVD

@@ -1,0 +1,8 @@
+rem
+rem This CONFIG.SYS was created by Jeff Long 1/26/93
+rem It should be dated 1/26/93 at 10:53pm with a size of 156 bytes
+rem
+FILES= 30
+BUFFERS=30
+DEVICE=C:\DOS\HIMEM.SYS
+DEVICE=C:\DOS\SMARTDRV.SYS 1024

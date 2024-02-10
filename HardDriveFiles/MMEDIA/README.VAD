@@ -1,0 +1,63 @@
+INSTALLATION (Version 1.02)
+
+  Note:  If you purchased an earlier level Adapter (P/N 34F3091), the
+         Composite Sync Loop test is not available although it is
+         referenced in the Advanced Diagnostics.
+
+  WARNING:  The files to be installed must be in a subdirectory named
+            \MMEDIA.  If a \MMEDIA subdirectory already exists, files
+            being installed will overwrite any file in that subdirectory
+            that has the same filename and extension.
+
+  WARNING:  The device drivers given below, MMVAINIT.SYS and MMVAINIT.EXE,
+            must be removed or commented (insert REM at the beginning of
+            line containing the MMVAINIT file) prior to replacement of
+            the M_Motion Video Adapter.  Follow the directions to install
+            the hardware as given in the Installation and Technical Reference
+            Manual.  Follow the steps below to insert the required
+            initialization program (or remove REM from the line).
+
+  With the diagnostic diskette in drive A:, enter the following commands:
+
+  A:
+  INSTALL C:
+
+  Where A: is the drive containing the diagnostic diskette, and C:
+  is the drive that you wish to install to.
+
+OPERATION UNDER DOS
+  Your M-Motion Video Adapter/A requires initialization in order to work
+  properly with DOS.
+
+  Place the following lines in your AUTOEXEC.BAT file:
+
+  C:
+  CD C:\MMEDIA
+  MMVAINIT
+\autoexec.bat
+  CD \
+
+  Where C: and \MMEDIA represent the drive and path where MMVAINIT and
+  MMVAD.RAW are stored.  These lines should occur above any other M-Motion
+  Video Adapter/A executable file in your AUTOEXEC.BAT file.
+  To continue installation, follow the directions in the M-Motion Video
+  Adapter/A Installation and Technical Reference Manual - Chapter 1
+  Installation.
+
+
+OPERATING UNDER OS/2
+  Your M-Motion Video Adapter/A requires initialization in order to work
+  properly with OS/2.
+
+  Place the following line in your OS/2 CONFIG.SYS file:
+
+  DEVICE=C:\MMEDIA\MMVAINIT.SYS C:\MMEDIA\MMVAD.RAW
+
+  Where C:\MMEDIA represents the drive and path where MMVAD.SYS and
+  MMVAD.RAW are stored.  This line should occur above any other M-Motion
+  Video Adapter/A device drivers in the CONFIG.SYS file.
+  To continue installation, follow the directions in the M-Motion Video
+  Adapter/A Installation and Technical Reference Manual - Chapter 1
+  Installation.
+
+

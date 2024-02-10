@@ -1,0 +1,7 @@
+fstick
+
+pause
+
+calibrat
+
+lsptcall

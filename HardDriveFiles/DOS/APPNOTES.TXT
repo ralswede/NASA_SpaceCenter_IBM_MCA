@@ -1,0 +1,258 @@
+
+APPNOTES.TXT
+
+NOTES ON USING APPLICATIONS WITH IBM DOS VERSION 5.0
+===================================================
+
+This document provides important information not included in the
+IBM DOS User's Guide and Reference or in on-line Help.
+
+Look through the following table of contents to determine
+whether your application is included.
+
+ATTENTION CODEVIEW AND INTEL ABOVEBOARD USERS
++++++++++++++++++++++++++++++++++++++++++++++
+Sections 1.1 and 1.3 contain critical information
+about using Intel Aboveboard and CodeView with
+DOS 5.0.
++++++++++++++++++++++++++++++++++++++++++++++
+
+For information about installing DOS 5.0 and using hardware
+and networks with DOS 5.0, see the README.TXT file.
+
+The following topics are discussed in this file:
+
+1. Making Your Software Compatible with DOS 5.0
+   1.1 Aboveboard 286 and Aboveboard Plus Installation Programs
+   1.2 AUTORUN.EXE
+   1.3 CodeView
+   1.4 Easel 6.0
+   1.5 Fastback
+   1.6 GeoWorks
+   1.7 Keyboard Conflicts
+       * Lotus Metro
+       * Lotus Express
+       * IBM Displaywrite III
+       * Borland Turbo Lightning
+       * Micro Logic Tornado 1.8
+   1.8 Lotus 1-2-3 (3.0 or Later)
+   1.9 Manifest
+   1.10 Paintbrush 2.0
+   1.11 PC-Kwik Disk Accelerator
+   1.12 Pklite
+   1.13 ProKey and DOS Editor/QBasic
+   1.14 Sidekick 2.0
+   1.15 Soft-ICE
+   1.16 Software Carousel
+   1.17 Task Swapper and Asynchronous I/O
+   1.18 Ventura Publisher
+   1.19 WordPerfect WPINFO.EXE 5.1
+   1.20 WordPerfect Office 3.0
+   1.21 XTreeNet
+
+1. MAKING YOUR SOFTWARE COMPATIBLE WITH DOS 5.O
+==================================================
+
+1.1 Aboveboard 286 and Aboveboard Plus Installation Programs
+------------------------------------------------------------
+CAUTION: The Intel Aboveboard installation program tests
+memory in a way that corrupts extended memory.
+
+Before using Intel's Aboveboard installation program, make sure
+you haven't loaded software such as SMARTDRV or RAMDRIVE that
+uses extended memory.
+
+1.2 AUTORUN.EXE
+---------------
+If you can't use Mountain Network Solutions AUTORUN.EXE, a tape-
+drive backup program, contact your vendor for an upgrade.
+
+1.3 CodeView
+------------
+CAUTION: Using versions 3.0 to 3.13 of the CodeView CV.EXE file
+may cause the loss of data if your system has a 80386 memory
+manager (such as EMM386.EXE) and device drivers or programs that
+use extended memory.
+
+To start CodeView versions 3.0 to 3.13 safely, use the CV.COM
+file included with DOS 5.0.
+
+Copy the CV.COM file from the distribution disks to the directory
+that contains your CV.EXE file. Then, type the following to start
+CodeView:
+
+   CV
+
+   or
+
+   CV.COM
+
+If you start CodeView by using a batch file or program item in a
+shell (such as DOS Shell), change the batch file or program
+item so that it specifies the CV.COM instead of the CV.EXE file.
+
+Make sure you use HIMEM.SYS driver version 2.77 or later with
+CodeView. Otherwise, the CV.COM file will not prevent data loss.
+DOS 5.0 includes version 2.77.
+
+This problem has been fixed in CodeView version 3.14. Call
+Microsoft Customer Service to get this version.
+
+1.4 Easel 6.0
+-------------
+Interactive Images Easel 6.0 is incompatible with the DOS=HIGH and
+EMM386 commands. Contact your vendor for an update.
+
+1.5 Fastback
+------------
+If you run DOS 5.0 in the high memory area, you must use the
+LOADFIX command before running Fifth Generation Systems Fastback
+or the Fastback installation program. Type the following:
+
+    LOADFIX fb.exe
+
+    or
+
+    LOADFIX fbinstal.exe
+
+For information about the LOADFIX command, see Chapter 4 of the
+IBM DOS Getting Started guide.
+
+1.6 GeoWorks
+------------
+If you cannot run GeoWorks (PC/GEOS) after installing DOS
+5.0, use the SETVER command to report version number 4.01 to the
+GEOS.EXE file.
+
+Do not run the installation program for GeoWorks Ensemble when
+DOS Shell Task Swapper is active.
+
+Use the Exclusive Tasking option when running GeoWorks Ensemble
+with Windows, and use the Prevent Program Switch option when
+running it with DOS Shell Task Swapper.
+
+1.7 Keyboard Conflicts
+----------------------
+Some software packages do not support the extended ROM BIOS for
+101/102-key keyboards.  These include Lotus Metro, Lotus Express,
+IBM Displaywrite III, Borland Turbo Lightning, and Micro Logic
+Tornado 1.8. If you can't use your keyboard after starting an
+application, restart your computer, and add the following line
+to your CONFIG.SYS file:
+
+   switches=/k
+
+If you are using ANSI.SYS, also add a /k switch to the
+DEVICE=ANSI.SYS command in your CONFIG.SYS file.
+
+1.8 Lotus 1-2-3 (3.0 or Later)
+------------------------------
+If you run Lotus 1-2-3 3.0 with Task Swapper in DOS Shell,
+set the XMS Memory KB Required option in the Advanced dialog box
+to 384.
+
+For more information about specifying advanced properties, see
+Chapter 8 of the IBM DOS User's Guide and Reference.
+
+If you run Lotus 1-2-3 3.0 or later and load device drivers or
+memory-resident programs into the upper memory area,
+use the RAM switch with the DEVICE=EMM386.EXE command in your
+CONFIG.SYS file.
+
+1.9 Manifest
+------------
+Version 1.0 of Quarterdeck Manifest is incompatible with DOS
+5.0. Contact your vendor for an upgrade.
+
+1.10 Paintbrush 2.0
+-------------------
+If you have an EGA monitor and want to run Microsoft or ZSoft
+Paintbrush 2.0, you must remove the DEVICE=EGA.SYS command from
+your CONFIG.SYS file. After removing the command, you may
+have difficulty with screen swapping when using Task Swapper in
+DOS Shell.
+
+1.11 PC-Kwik Disk Accelerator
+-----------------------------
+Do not load versions of Multisoft PC-Kwik Disk Accelerator
+earlier than 2.0 into the upper memory area.
+
+1.12 Pklite
+-----------
+Do not use Pklite to pack device drivers.
+
+If you have a PC-Kwik cache on your system, and you can't run
+a packed program, do one of the following:
+   * Use the LOADFIX command to start the program.
+   * Run DOS 5.0 in conventional memory.
+   * Run a version of the program that was not packed with Pklite.
+   * Disable asynchronous reads on the PC-Kwik cache.
+
+For information about the LOADFIX command, see Chapter 4 of the
+IBM DOS Getting Started guide.
+
+1.13 ProKey and DOS Editor/QBasic
+------------------------------------
+Some versions of RoseSoft ProKey are incompatible with DOS
+Editor and QBasic.
+
+1.14 Sidekick 2.0
+-----------------
+If you are running DOS 5.0 in the high memory area, use the
+following LOADFIX command to start Borland Sidekick 2.0:
+
+    LOADFIX sk2.exe
+
+For information about the LOADFIX command, see Chapter 4 of the
+IBM DOS Getting Started guide.
+
+1.15 Soft-ICE
+-------------
+When using Nu-Mega Soft-ICE, load it before loading other
+drivers. Otherwise, you may lose data stored in extended memory
+by drivers such as SMARTDRV.
+
+1.16 Software Carousel
+----------------------
+Software Carousel 5.0 is incompatible with DOS 5.0.
+
+If you installed HIMEMSLS.SYS, remove the DEVICE=HIMEMSLS.SYS
+command from your CONFIG.SYS after running Setup.
+
+To use DOSKEY, load it after loading Software Carousel into
+memory.
+
+1.17 Task Swapper and Asynchronous I/O
+--------------------------------------
+Some programs that perform asynchronous communications are
+incompatible with DOS Shell Task Swapper. Terminal-emulation
+software (such as SmartCom and Procomm Plus) and server/client
+software (such as Laplink and Blast) are asynchronous
+communications programs. If you can't use an asynchronous
+program, contact your vendor for more information.
+
+1.18 Ventura Publisher
+----------------------
+If you can't start Ventura Publisher, make sure your Ventura
+Publisher directory is within the first 70 characters of the PATH
+command in your AUTOEXEC.BAT file.
+
+1.19 WordPerfect WPINFO.EXE 5.1
+-------------------------------
+Some versions of WordPerfect WPINFO.EXE are incompatible with
+DOS 5.0. Contact your vendor for more information.
+
+1.20 WordPerfect Office 3.0
+---------------------------
+Some versions of WordPerfect Office 3.0 are incompatible with
+DOS 5.0. Contact your vendor for more information.
+
+1.21 XTreeNet
+-------------
+To use XTreeNet with DOS Shell Task Swapper, select the
+Prevent Program Switch option in the DOS Shell Advanced
+dialog box. For more information about specifying advanced
+properties, see Chapter 8 of the IBM DOS User's Guide
+and Reference.
+
+
